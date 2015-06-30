@@ -1,4 +1,6 @@
 <h1>Products#show</h1>
 <p>Find me in app/views/products/show.html.erb</p>
 
-product.formatted_price
+<% @products.each do |product|  %>
+<%= product.formatted_price  %>
+<% end %>
